@@ -3,7 +3,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>{{ page_title }}</title>
-  
+
   {{ content_for_header }}
 
   {{ 'styles.css' | asset_url | stylesheet_tag }}
@@ -11,6 +11,9 @@
 </head>
 <body>
   <main id="mainContent">
+    {% section 'header' %}
+
     {{ content_for_layout }}
   </main>
 </body>
+
