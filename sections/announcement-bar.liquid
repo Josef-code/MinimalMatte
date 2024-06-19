@@ -1,0 +1,60 @@
+<div
+  class="announcement-bar"
+  style="background-color: {{ section.settings.background_color }}; color: {{ section.settings.text_color }};"
+>
+  <p>{{ section.settings.announcement_text }}</p>
+</div>
+
+<style>
+  .announcement-bar {
+    padding: 10px;
+    text-align: center;
+    position: relative;
+  }
+  .announcement-bar p {
+    margin: 0;
+  }
+  .announcement-bar button {
+    background: none;
+    border: none;
+    font-size: 20px;
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+  }
+</style>
+
+{% schema %}
+{
+  "name": "Announcement Bar",
+  "settings": [
+    {
+      "type": "text",
+      "id": "announcement_text",
+      "label": "Announcement Text",
+      "default": "Welcome to our store"
+    },
+    {
+      "type": "color",
+      "id": "background_color",
+      "label": "Background Color",
+      "default": "#000000"
+    },
+    {
+      "type": "color",
+      "id": "text_color",
+      "label": "Text Color",
+      "default": "#ffffff"
+    }
+  ],
+
+  "presets": [
+    {
+      "name": "Announcement Bar",
+      "category": "Custom"
+    }
+  ]
+}
+{% endschema %}
