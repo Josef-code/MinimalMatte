@@ -1,0 +1,45 @@
+<!-- Header - -->
+<header class="bg-dark py-5">
+  <div class="container px-4 px-lg-5 my-5">
+    <div class="text-center text-white">
+      <h1 class="display-4 fw-bolder">
+        {% if template.name == 'index' %}
+          {{ section.settings.banner-header }}
+        {% endif %}
+      </h1>
+
+      {% if template.name == 'index' %}
+        <p class="lead fw-normal text-white-50 mb-0">
+        
+            {{ section.settings.banner-text }}
+        </p>
+      {% endif %}
+    </div>
+  </div>
+</header>
+
+{% schema %}
+{
+  "name": "header-banner",
+  "settings": [
+    {
+      "type": "text",
+      "id": "banner-header",
+      "label": "Banner Header",
+      "default": "Shop in style"
+    },
+    {
+      "type": "text",
+      "id": "banner-text",
+      "label": "Banner Text",
+      "default": "Your minimalist Store"
+    }
+  ],
+  "presets": [
+    {
+      "name": "Banner",
+      "category": "Custom"
+    }
+  ]
+}
+{% endschema %}
