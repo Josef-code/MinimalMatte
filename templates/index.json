@@ -7,3 +7,15 @@
 * made to this file may be overwritten.
 * ------------------------------------------------------------
 */
+{
+  "sections": {
+    "header-banner": {
+      "type": "header-banner",
+      "settings": {
+      }
+    }
+  },
+  "order": [
+    "header-banner"
+  ]
+}
