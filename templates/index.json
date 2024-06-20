@@ -7,10 +7,3 @@
 * made to this file may be overwritten.
 * ------------------------------------------------------------
 */
-{
-  "sections": {
-  },
-  "order": [
-    "announcement-bar",
-  ]
-}
