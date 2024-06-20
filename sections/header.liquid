@@ -14,7 +14,7 @@
     </button>
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <ul class="navbar-nav me-auto mb-2 mb-lg-0 ms-lg-4">
-        {% for link in linklists[section.settings.menu].links %}
+        {% for link in linklists.main-menu.links %}
           <li class="nav-item"><a class="nav-link active" aria-current="page" href="{{ link.url }}">{{ link.title }}</a></li>
         {% endfor %}
       </ul>
@@ -28,23 +28,3 @@
     </div>
   </div>
 </nav>
-
-{% schema %}
-{
-  "name": "Navigation Menu",
-  "settings": [
-    {
-      "type": "link_list",
-      "id": "menu",
-      "default": "main-menu",
-      "label": "main menu"
-    }
-  ],
-  "presets": [
-    {
-      "name": "Navigation menu",
-      "category": "custom"
-    }
-  ]
-}
-{% endschema %}
