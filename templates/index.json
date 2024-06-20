@@ -12,6 +12,8 @@
     "header-banner": {
       "type": "header-banner",
       "settings": {
+        "banner-header": "Shop from the Best",
+        "banner-text": "Your minimalist Store"
       }
     }
   },
