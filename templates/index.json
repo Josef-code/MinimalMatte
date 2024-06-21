@@ -9,12 +9,12 @@
 */
 {
   "sections": {
-    "header-banner": {
+    "header_banner_EWkdf8": {
       "type": "header-banner",
       "settings": {
-        "banner-header": "Shop from the Best",
+        "banner-header": "Shop in style",
         "banner-text": "Your minimalist Store",
-        "banner-image": "shopify:\/\/shop_images\/a-barista-smiles-proudly-stood-in-her-cafe.jpg"
+        "banner-image": "shopify:\/\/shop_images\/a-woman-in-her-shop.jpg"
       }
     },
     "featured_products_bjm383": {
@@ -25,7 +25,7 @@
     }
   },
   "order": [
-    "header-banner",
+    "header_banner_EWkdf8",
     "featured_products_bjm383"
   ]
 }
