@@ -15,9 +15,16 @@
         "banner-header": "Shop from the Best",
         "banner-text": "Your minimalist Store"
       }
+    },
+    "featured_products_bjm383": {
+      "type": "featured-products",
+      "settings": {
+        "collection": "apparel"
+      }
     }
   },
   "order": [
-    "header-banner"
+    "header-banner",
+    "featured_products_bjm383"
   ]
 }
