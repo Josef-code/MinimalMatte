@@ -13,7 +13,8 @@
       "type": "header-banner",
       "settings": {
         "banner-header": "Shop from the Best",
-        "banner-text": "Your minimalist Store"
+        "banner-text": "Your minimalist Store",
+        "banner-image": "shopify:\/\/shop_images\/a-barista-smiles-proudly-stood-in-her-cafe.jpg"
       }
     },
     "featured_products_bjm383": {
