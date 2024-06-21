@@ -17,17 +17,12 @@
   </div>
 </header>
 
-
 {% style %}
-
-.banner-background-image {
-  background-image: url({{ section.settings.banner-image | image_url }});
-  background-position: center;
-}
-
+  .banner-background-image {
+    background-image: url({{ section.settings.banner-image | image_url }});
+    background-position: {{ section.settings.background-image-position }};
+  }
 {% endstyle %}
-
-
 
 {% schema %}
 {
@@ -49,6 +44,34 @@
       "type": "image_picker",
       "id": "banner-image",
       "label": "Banner Image"
+    },
+    {
+      "type": "select",
+      "id": "background-image-position",
+      "label": "Background Image Position",
+      "options": [
+        {
+          "value": "bottom",
+          "label": "Bottom"
+        },
+        {
+          "value": "center",
+          "label": "Center"
+        },
+        {
+          "value": "top",
+          "label": "Top"
+        },
+        {
+          "value": "left",
+          "label": "Left"
+        },
+        {
+          "value": "right",
+          "label": "Right"
+        }
+      ],
+      "default": "middle"
     }
   ],
   "presets": [
