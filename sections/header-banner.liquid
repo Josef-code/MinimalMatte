@@ -17,16 +17,21 @@
   </div>
 </header>
 
+
 {% style %}
-  .banner-background-image {
-    background-image: url({{ section.settings.banner-image | image_url }});
-    background-position: {{ section.settings.background-image-position }};
-  }
+
+.banner-background-image {
+  background-image: url({{ section.settings.banner-image | image_url }});
+  background-position: center;
+}
+
 {% endstyle %}
+
+
 
 {% schema %}
 {
-  "name": "Header banner",
+  "name": "header-banner",
   "settings": [
     {
       "type": "text",
