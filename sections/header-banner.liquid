@@ -1,22 +1,33 @@
 <!-- Header - -->
-<header class="bg-dark py-5">
+<header class="banner-background-image py-5">
   <div class="container px-4 px-lg-5 my-5">
     <div class="text-center text-white">
       <h1 class="display-4 fw-bolder">
         {% if template.name == 'index' %}
-          {{ section.settings.banner-header }}
+          {{ section.settings['banner-header'] }}
         {% endif %}
       </h1>
 
       {% if template.name == 'index' %}
         <p class="lead fw-normal text-white-50 mb-0">
-        
-            {{ section.settings.banner-text }}
+          {{ section.settings['banner-text'] }}
         </p>
       {% endif %}
     </div>
   </div>
 </header>
+
+
+{% style %}
+
+.banner-background-image {
+  background-image: url("{{ section.settings.banner-image }}");
+  background-position: center;
+}
+
+{% endstyle %}
+
+
 
 {% schema %}
 {
@@ -33,11 +44,16 @@
       "id": "banner-text",
       "label": "Banner Text",
       "default": "Your minimalist Store"
+    },
+    {
+      "type": "image_picker",
+      "id": "banner-image",
+      "label": "Banner Image"
     }
   ],
   "presets": [
     {
-      "name": "Banner",
+      "name": "Banner"
     }
   ]
 }
