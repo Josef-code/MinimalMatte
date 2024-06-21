@@ -22,7 +22,7 @@
 
 .banner-background-image {
   background-image: url({{ section.settings.banner-image | image_url }});
-  background-position: center;
+  background-position: {{  section.settings.background-banner-position }};
 }
 
 {% endstyle %}
