@@ -8,7 +8,8 @@
 
   {{ 'styles.css' | asset_url | stylesheet_tag }}
 
-  {{ 'script.js' | asset_url }}
+  <script src="{{ 'script.js' | asset_url }}" defer="defer"></script>
+  
 </head>
 <body>
 
