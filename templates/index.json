@@ -14,7 +14,8 @@
       "settings": {
         "banner-header": "Shop in style",
         "banner-text": "Your minimalist Store",
-        "banner-image": "shopify:\/\/shop_images\/a-woman-in-her-shop.jpg"
+        "banner-image": "shopify:\/\/shop_images\/retail-shopping-package.jpg",
+        "background-banner-position": "center"
       }
     },
     "featured_products_bjm383": {
