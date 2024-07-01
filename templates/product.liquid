@@ -1,0 +1,29 @@
+<div class="container">
+    <section class="container py-5 px-4" style="border: red solid 2px">
+      <div
+        class="product-page d-flex flex-row gap-3"
+        style="border: blue solid 2px"
+      >
+        <div class="product-image">
+          <img
+            src="{{ product.featured_image.src | image_url: width: 500 }}" alt="{{ product.featured_image.alt }}" width="500" height="500"
+          />
+        </div>
+        <div class="product description px-4">
+            <h2>{{ product.title }}</h2>
+            <p class="fs-4">Price: {{ product.price | money_with_currency }}</p>
+            <p class="justify-content-center">{{ product.description }} </p>
+            <div class="quantity-wrapper p-2 w-25" style="border: brown solid 2px;">
+              <span class="qty-btn quantity-decrease p-3 fs-4" role="button">-</span>
+              <span class="quantity p-3">1</span>
+              <span class="qty-btn quantity-increase p-3 fs-4" role="button">+</span>
+            </div>
+            <div class="cart-buttons d-flex flex-row gap-3 py-5">
+              <button type="button" class="btn btn-primary">Buy now</button>
+              <button type="button" class="btn btn-primary">Add to cart</button>
+
+            </div>"
+        </div>
+      </div>
+    </section>
+</div> 
